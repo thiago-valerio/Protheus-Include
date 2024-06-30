@@ -16,7 +16,7 @@ def descompactaUmArquivo(arq):
 
 def nomeValido(arq):
 	# Verifica se o nome do arquivo termina com '.ch' ou se é nome de um arquivo que já foi descompactado
-	return arq[len(arq) - 3:len(arq) - 0] == '.ch' or arq[len(arq) - 3:len(arq) - 0] == '.CH' or arq[0:4] == 'Juk-'
+	return arq[len(arq) - 3:len(arq) - 0] == '.ch' or arq[len(arq) - 3:len(arq) - 0] == '.CH' or arq[len(arq) - 3:len(arq) - 0] == '.th' or arq[len(arq) - 3:len(arq) - 0] == '.TH'
 
 # Puxa a lista de nomes de arquivos no diretório atual
 onlyfiles = [f for f in listdir('./include/') if isfile(join('./include/', f))]
